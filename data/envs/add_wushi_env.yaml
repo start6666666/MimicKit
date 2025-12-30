@@ -19,7 +19,7 @@ env:
     log_tracking_error: True
 
     ref_char_offset: [2.0, 0.0, 0.0] # m
-    init_pose: [0, 0, 0.351, 0, 0, 0, -0.25, 0, 0, 0.65, -0.4, 0, 0, 0, 0, 0, 0, -0.25, 0, 0, 0.65, -0.4, 0, 0, 0, 0, 0, 0]
+    # init_pose: [0, 0, 0.351, 0, 0, 0, -0.25, 0, 0, 0.65, -0.4, 0, 0, 0, 0, 0, 0, -0.25, 0, 0, 0.65, -0.4, 0, 0, 0, 0, 0, 0]
 
     enable_early_termination: True
     
@@ -30,7 +30,7 @@ env:
         "FL_calf_link", "FR_calf_link", "RL_calf_link", "RR_calf_link"
     ]
     
-    motion_file: "data/motions/hightorque_wushi/wushi_dance.pkl"
+    motion_file: "data/motions/hightorque_wushi/dance1.pkl"
     
     reward_pose_w: 0.5
     reward_vel_w: 0.1
@@ -49,8 +49,8 @@ engine:
     engine_name: "isaac_gym"
     
     control_mode: "pos"
-    control_freq: 30
-    sim_freq: 120
+    control_freq: 24
+    sim_freq: 24
     env_spacing: 5
     
     ground_contact_height: 0.2

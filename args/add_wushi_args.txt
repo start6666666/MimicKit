@@ -1,4 +1,5 @@
---num_envs 4096
+--num_envs 1024
+--mode train
 
 --env_config data/envs/add_wushi_env.yaml
 --agent_config data/agents/add_wushi_agent.yaml
@@ -6,4 +7,5 @@
 --log_file output/wushi/log.txt
 --out_model_file output/wushi/model.pt
 
+--visualize false
 --max_samples 120000000
