@@ -1,4 +1,4 @@
---num_envs 4096
+--num_envs 1
 
 --env_config data/envs/vault_humanoid_env.yaml
 --agent_config data/agents/deepmimic_humanoid_ppo_agent.yaml

@@ -1,0 +1,27 @@
+env_name: "view_motion"
+
+env:
+    char_file: "data/assets/hightorque_wushi/pi_35dof.xml"
+    camera_mode: "track"
+
+    episode_length: 10.0 # seconds
+    global_obs: False
+    root_height_obs: True
+    
+    key_bodies: ["FL_ankle_roll_link", "FR_ankle_roll_link", "RL_ankle_roll_link", "RR_ankle_roll_link"]
+    contact_bodies: [
+        "FL_ankle_roll_link", "FR_ankle_roll_link", "RL_ankle_roll_link", "RR_ankle_roll_link",
+        "FL_ankle_pitch_link", "FR_ankle_pitch_link", "RL_ankle_pitch_link", "RR_ankle_pitch_link",
+        "FL_calf_link", "FR_calf_link", "RL_calf_link", "RR_calf_link"
+    ]
+
+    motion_file: "data/motions/hightorque_wushi/dance1.pkl"
+
+
+engine:
+    engine_name: "isaac_gym"
+
+    control_mode: "none"
+    sim_freq: 24
+    control_freq: 24
+    env_spacing: 5

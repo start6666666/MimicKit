@@ -1,0 +1,6 @@
+--num_envs 1
+
+--env_config data/envs/view_motion_wushi_env.yaml
+
+--log_file output/wushi/log.txt
+--out_model_file output/wushi/model.pt
